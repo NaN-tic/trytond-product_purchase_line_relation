@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<tryton>
+    <data>
+        <!-- product.product relate to purchase.line -->
+        <record model="ir.action.act_window" id="act_purchase_line_form2">
+            <field name="name">Purchase Lines</field>
+            <field name="res_model">purchase.line</field>
+            <field name="domain"
+                eval="[('product', '=', Eval('active_id'))]" pyson="1"/>
+        </record>
+        <record model="ir.action.keyword" id="act_purchase_line_keyword2">
+            <field name="keyword">form_relate</field>
+            <field name="model">product.product,-1</field>
+            <field name="action" ref="act_purchase_line_form2"/>
+        </record>
+        <record model="ir.action-res.group" id="act_purchase_line_form2-group_purchase">
+            <field name="action" ref="act_purchase_line_form2"/>
+            <field name="group" ref="purchase.group_purchase"/>
+        </record>
+        <!-- product.template relate to purchase.line -->
+        <record model="ir.action.act_window" id="act_purchase_line_form3">
+            <field name="name">Purchase Lines</field>
+            <field name="res_model">purchase.line</field>
+            <field name="domain"
+                eval="[('product.template', '=', Eval('active_id'))]" pyson="1"/>
+        </record>
+        <record model="ir.action.keyword" id="act_purchase_line_keyword3">
+            <field name="keyword">form_relate</field>
+            <field name="model">product.template,-1</field>
+            <field name="action" ref="act_purchase_line_form3"/>
+        </record>
+        <record model="ir.action-res.group" id="act_purchase_line_form3-group_purchase">
+            <field name="action" ref="act_purchase_line_form3"/>
+            <field name="group" ref="purchase.group_purchase"/>
+        </record>
+    </data>
+</tryton>

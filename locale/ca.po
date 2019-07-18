@@ -1,0 +1,11 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.action,name:act_purchase_line_form2"
+msgid "Purchase Lines"
+msgstr "Línies de compra"
+
+msgctxt "model:ir.action,name:act_purchase_line_form3"
+msgid "Purchase Lines"
+msgstr "Línies de compra"
