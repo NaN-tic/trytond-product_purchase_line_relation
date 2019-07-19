@@ -2,6 +2,14 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:purchase.line,shipment_state:"
+msgid "Shipment State"
+msgstr "Estat enviament"
+
+msgctxt "model:ir.action,name:act_purchase_all_line"
+msgid "Purchase Lines"
+msgstr "Línies de compra"
+
 msgctxt "model:ir.action,name:act_purchase_line_form2"
 msgid "Purchase Lines"
 msgstr "Línies de compra"
@@ -9,3 +17,23 @@ msgstr "Línies de compra"
 msgctxt "model:ir.action,name:act_purchase_line_form3"
 msgid "Purchase Lines"
 msgstr "Línies de compra"
+
+msgctxt "model:ir.ui.menu,name:menu_purchase_line_form"
+msgid "Purchase Lines"
+msgstr "Línies de compra"
+
+msgctxt "selection:purchase.line,shipment_state:"
+msgid "Exception"
+msgstr "Excepció"
+
+msgctxt "selection:purchase.line,shipment_state:"
+msgid "None"
+msgstr "Cap"
+
+msgctxt "selection:purchase.line,shipment_state:"
+msgid "Received"
+msgstr "Rebut"
+
+msgctxt "selection:purchase.line,shipment_state:"
+msgid "Waiting"
+msgstr "En espera"
