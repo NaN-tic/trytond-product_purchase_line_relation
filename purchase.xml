@@ -8,6 +8,9 @@
           <field name="res_model">purchase.line</field>
       </record>
 
+      <menuitem parent="purchase.menu_purchase_form" action="act_purchase_all_line"
+          id="menu_purchase_line_form" sequence="10"/>
+
       <!-- product.product relate to purchase.line -->
       <record model="ir.action.act_window" id="act_purchase_line_form2">
           <field name="name">Purchase Lines</field>
@@ -48,8 +51,5 @@
           <field name="action" ref="act_purchase_line_form3"/>
           <field name="group" ref="purchase.group_purchase"/>
       </record>
-
-      <menuitem parent="purchase.menu_purchase_form" action="act_purchase_all_line"
-          id="menu_purchase_line_form" sequence="10"/>
     </data>
 </tryton>
