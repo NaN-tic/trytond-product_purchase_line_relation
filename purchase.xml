@@ -28,13 +28,6 @@
           <field name="group" ref="purchase.group_purchase"/>
       </record>
 
-      <record model="ir.ui.view" id="purchase_line_view_tree">
-          <field name="model">purchase.line</field>
-          <field name="inherit"
-              ref="purchase.purchase_line_view_tree"/>
-          <field name="name">purchase_line_tree</field>
-      </record>
-
       <!-- product.template relate to purchase.line -->
       <record model="ir.action.act_window" id="act_purchase_line_form3">
           <field name="name">Purchase Lines</field>
