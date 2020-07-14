@@ -2,6 +2,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:purchase.line,party:"
+msgid "Party"
+msgstr "Tercero"
+
 msgctxt "model:ir.action,name:act_purchase_all_line"
 msgid "Purchase Lines"
 msgstr "Líneas de compra"
