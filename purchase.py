@@ -1,4 +1,4 @@
-from trytond.pool import PoolMeta, Pool
+from trytond.pool import PoolMeta
 from trytond.model import fields
 
 
