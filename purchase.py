@@ -1,12 +1,15 @@
 from trytond.pool import PoolMeta
 from trytond.model import fields
+from trytond.pyson import Eval
 
 
 class PurchaseLine(metaclass=PoolMeta):
     'Purchase Line'
     __name__ = 'purchase.line'
     party = fields.Function(fields.Many2One('party.party',
-            'Party'), 'get_party', searcher = 'search_party')
+            'Party', context={
+            'company': Eval('company'),
+            }, depends=['company']), 'get_party', searcher='search_party')
 
     def get_party(self, name):
         return self.purchase.party.id
