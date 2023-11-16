@@ -8,7 +8,7 @@ class PurchaseLine(metaclass=PoolMeta):
     __name__ = 'purchase.line'
     party = fields.Function(fields.Many2One('party.party',
             'Party', context={
-            'company': Eval('company'),
+            'company': Eval('company', -1),
             }, depends=['company']), 'get_party', searcher='search_party')
 
     def get_party(self, name):
